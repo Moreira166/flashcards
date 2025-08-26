@@ -19,9 +19,9 @@ font-size: 0, 6rem;
 margin-top: :0,5rem;
 }
 :root{
-    --text-color: #000
-    --card-front-color: #000000
-    --card-bck-color: #000
+    --text-color: #000;
+    --card-front-color: #000000;
+    --card-bck-color: #000;
 }
 .container{
  display: flex;
@@ -57,4 +57,14 @@ margin-top: :0,5rem;
 .cartão-conteudo-resposta p{
     color: var(--card-back-color);
     font-weight: 700;
+}
+.cartão:hover .cartão-conteudo{
+    transform: rotateY(180deg);
+}
+.cartão-conteudo-pergunta;{
+.cartão-conteudo-resposta;
+backface-visibility:hidden;
+position: absolute;
+height: 100%;
+width: 100%;
 }
