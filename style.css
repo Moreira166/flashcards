@@ -1,29 +1,28 @@
 body{
-    background-color: aqua(255,25,0, 0,728);
+    background-color: rgba (255,25,0, 0,728);
     color: blue;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
 }
 footer{
-background-color: aqua;
+background-color: aqua  (55, 255, 0);
 color: black;
 position:fixed;
 bottom:0;
 width:100%;
 height:2rem;
 }
-
 footer p {
-    text-align:center;
-font-size: 0, 6rem;
-margin-top: :0,5rem;
-}
+    text-align: center;
+font-size: 0.6 rem;
+margin-top:0.5 rem;
+}  
 :root{
-    --text-color: #000;
-    --card-front-color: #000000;
-    --card-bck-color: #000;
+    --text-color: hsl(210, 83%, 45%);
+    --card-front-color: hsl(347, 90%, 51%);
+    --card-bck-color: hwb(103 7% 7%);
 }
-.container{
+#container{
  display: flex;
 }
 .cartão{
@@ -40,7 +39,7 @@ margin-top: :0,5rem;
     transition: transform 300ms ease-in-out;
 }
 .cartão-conteudo h3{
-    color: blue var(--text-color);
+    color: var(--text-color);
     border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
@@ -68,3 +67,11 @@ position: absolute;
 height: 100%;
 width: 100%;
 }
+        .cartão-conteudo-resposta{
+            transform: rotateY(180deg);
+
+        }
+        .cartão-conteudo p{
+           margin-top: 1rem; 
+           padding: 2rem;
+        }
